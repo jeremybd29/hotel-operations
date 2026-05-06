@@ -1,4 +1,4 @@
-
+import java.time.LocalDateTime;
 //employee class stores employee details such as name, position, and salary
 public class Employee {
 
@@ -55,6 +55,23 @@ public class Employee {
             System.out.println("Employee is not clocked in.");
         }
 
+    }
+    //overload methods
+    //punch in uses local time
+    public void punchIn(){
+        LocalDateTime now = LocalDateTime.now();
+        int currentHour = now.getHour();
+
+        //reuses existing punchIn method to avoid code duplication
+        punchIn(currentHour);
+    }
+    // punch out using current system
+    public void punchOut(){
+        LocalDateTime now = LocalDateTime.now();
+        int currentHour = now.getHour();
+
+        //reuse existing punchOut
+        punchOut(currentHour);
     }
 
 }

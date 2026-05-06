@@ -7,8 +7,8 @@ public class Main {
         //employee  object
         Employee emp1 = new Employee("John Cena", "Manager", 25.0, 0);
         //john works from 10am to 2pm
-        emp1.punchIn(10);
-        emp1.punchOut(14);
+        emp1.punchIn(12);
+        emp1.punchOut(18);
 
         // reservation object using room
         Reservation res1 = new Reservation("Brock Lesnar", room1, 3);
